@@ -17,11 +17,10 @@ def save_results_to_txt(results, file_path):
             json.dump(result, file, ensure_ascii=False)
             file.write('\n')
 
-api_key = open("./api_key.txt")
-api_key.close
-cse_id = open("./cx_list.txt")
-cse_id.close
-query = "아이스 작대기"
+# Get user input for API key, CSE ID, and search query
+api_key = input("Enter your API key: ")
+cse_id = input("Enter your Custom Search ID (CSE ID): ")
+query = input("Enter your search query: ")
 
 results = search_google(api_key, cse_id, query)
 
