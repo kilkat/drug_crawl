@@ -17,8 +17,10 @@ def save_results_to_txt(results, file_path):
             json.dump(result, file, ensure_ascii=False)
             file.write('\n')
 
-api_key = "AIzaSyD2G_kKVg9paGEJ8jH_RAUAEcfjwQUJIx4"
-cse_id = "f67c667a97f834307"
+api_key = open("./api_key.txt")
+api_key.close
+cse_id = open("./cx_list.txt")
+cse_id.close
 query = "아이스 작대기"
 
 results = search_google(api_key, cse_id, query)
