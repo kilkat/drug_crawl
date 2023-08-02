@@ -1,6 +1,7 @@
 import requests
 import json
 import os
+import time  # Import the time module
 
 def search_google(api_key, cse_id, query, start_index=1, num_results=10):
     url = 'https://www.googleapis.com/customsearch/v1'
@@ -50,3 +51,4 @@ for cse_id in cse_ids:
             # Save search results to a TXT file
             file_path = "search_results.txt"
             save_results_to_txt(results, file_path)
+    time.sleep(1)  # Sleep for 1 second after each CSE key
