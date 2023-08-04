@@ -1,4 +1,2 @@
-cx_keys.txt
-queries.txt
-google_api_key.txt
-search_results.txt
+myenv
+data/

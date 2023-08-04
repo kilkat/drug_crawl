@@ -1,2 +1,2 @@
-# drug_crawl
-drug crawl with python with google api
+# crawl
+crawl with python
