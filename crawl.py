@@ -3,7 +3,6 @@ import requests
 from bs4 import BeautifulSoup
 from duckduckgo_search import DDGS
 
-# Create a DDGS instance
 with DDGS() as ddgs:
     # Call the text function and save the results in a variable
     results = [result for result in ddgs.text('검색 쿼리', region='wt-wt', safesearch='Off', timelimit='y')]
